@@ -86,3 +86,25 @@ footer a:hover {
 .carousel-control-next-icon {
     filter: invert(100%);
 }
+
+.education {
+    background-color: #f8f9fa;
+    padding: 50px 0;
+}
+
+.education h2 {
+    margin-bottom: 30px;
+}
+
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    margin-bottom: 20px;
+}
+
+.card-subtitle {
+    font-weight: bold;
+}
+
