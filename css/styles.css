@@ -108,3 +108,38 @@ footer a:hover {
     font-weight: bold;
 }
 
+/* Sección de Experiencia */
+.experience {
+    padding: 50px 0;
+}
+
+.experience .card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.experience .card-title {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.experience .card-subtitle {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.experience .card-body ul {
+    padding-left: 20px;
+    list-style-type: circle; /* Cambiar el tipo de lista a bullets */
+}
+
+.experience .card-body ul ul {
+    padding-left: 20px;
+    list-style-type: circle; /* Bullets anidados */
+}
+
+/* Sin estilo de lista para el rol y las tareas */
+.experience .rol, .experience .tareas {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 10px;
+}
