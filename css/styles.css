@@ -55,6 +55,18 @@ h2 {
     text-shadow: none; /* Sin sombra para mayor claridad */
 }
 
+.projects .card {
+    height: 300px; /* Altura fija, ajusta según sea necesario */
+    max-width: 350px; /* Ancho máximo para todos los contenedores */
+    margin: auto; /* Centra el contenedor */
+}
+
+.projects .card img {
+    max-height: 200px; /* Altura máxima de la imagen */
+    width: auto;
+    margin-bottom: 15px;
+}
+
 .card {
     background: #1c1c1c;
     border: 2px solid #7F00FF; /* Borde púrpura */
@@ -161,6 +173,7 @@ footer a:hover {
 }
 
 .nav-link:hover {
-    color: #4C0082 !important; /* Púrpura más oscuro */
+    
     text-shadow: 0 0 20px #7F00FF;
 }
+
