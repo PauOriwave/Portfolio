@@ -1,12 +1,16 @@
 body {
     font-family: 'Orbitron', sans-serif; /* Fuente futurista */
-    background-color: #121212; /* Negro profundo */
-    color: #e6e6e6; /* Gris claro para textos */
+    background-color: #F4F4F4; /* Gris suave para fondo */
+    color: #2C3E50; /* Color oscuro para los textos */
     padding-top: 56px;
 }
 
+.col-lg-6 {
+    padding-bottom: 30px;
+}
+
 .hero {
-    background: linear-gradient(rgba(18, 18, 18, 0.8), rgba(18, 18, 18, 0.8)), url('../images/hero-bg.jpg') no-repeat center center;
+    background: linear-gradient(rgba(38, 50, 56, 0.8), rgba(38, 50, 56, 0.8)), url('../images/hero-bg.jpg') no-repeat center center;
     background-size: cover;
     padding: 120px 0;
     text-align: center;
@@ -14,26 +18,26 @@ body {
 
 .hero h1 {
     font-size: 4rem;
-    text-shadow: 0 0 10px #7F00FF; /* Púrpura */
-    color: #e6e6e6; /* Gris claro para textos */
-    
+    text-shadow: 0 0 10px rgba(38, 50, 56, 0.8); /* Gris oscuro */
+    color: #FFFFFF; /* Blanco */
 }
 
 .hero p {
     font-size: 1.5rem;
+    color: #BDC3C7; /* Gris claro */
 }
 
 .btn-primary {
-    background-color: #7F00FF; /* Púrpura */
-    border-color: #7F00FF;
-    color: #121212;
-    box-shadow: 0 0 15px #7F00FF;
+    background-color: #34495E; /* Azul oscuro */
+    border-color: #34495E;
+    color: #FFFFFF;
+    box-shadow: 0 0 15px rgba(52, 152, 219, 0.6); /* Azul sutil */
     transition: background-color 0.3s, box-shadow 0.3s;
 }
 
 .btn-primary:hover {
-    background-color: #4C0082; /* Púrpura más oscuro */
-    box-shadow: 0 0 25px #7F00FF;
+    background-color: #2C3E50; /* Azul más oscuro */
+    box-shadow: 0 0 25px rgba(52, 152, 219, 0.8);
 }
 
 section {
@@ -41,84 +45,81 @@ section {
 }
 
 h2 {
-    color: #e6e6e6; /* Blanco */
+    color: #2C3E50; /* Un tono oscuro para los títulos */
     font-size: 2.5rem;
     text-align: center;
     margin-bottom: 40px;
     letter-spacing: 2px;
     text-transform: uppercase;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
 
+/* Títulos en secciones específicas (Proyectos, Educación, etc.) */
 .education h2,
 .projects h2 {
-    color: #000000; /* Negro */
-    text-shadow: none; /* Sin sombra para mayor claridad */
+    color: #2C3E50; /* Color más oscuro para mayor visibilidad */
+    text-shadow: 0 3px 8px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
 }
 
 .projects .card {
-    height: 300px; /* Altura fija, ajusta según sea necesario */
+    height: 300px; /* Altura fija */
     max-width: 350px; /* Ancho máximo para todos los contenedores */
     margin: auto; /* Centra el contenedor */
+    background: #FFFFFF; /* Fondo blanco */
+    border: 2px solid #34495E; /* Borde azul oscuro */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(52, 152, 219, 0.1); /* Sombra sutil */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: #2C3E50; /* Texto oscuro */
+    margin-bottom: 40px;
+}
+
+.projects .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 40px rgba(52, 152, 219, 0.3); /* Sombra sutil */
 }
 
 .projects .card img {
     max-height: 200px; /* Altura máxima de la imagen */
     width: auto;
     margin-bottom: 15px;
-}
-
-.card {
-    background: #1c1c1c;
-    border: 2px solid #7F00FF; /* Borde púrpura */
-    border-radius: 12px;
-    box-shadow: 0 0 20px rgba(127, 0, 255, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    color: #e6e6e6; /* Texto gris claro */
-    margin-bottom: 40px;
-}
-
-.card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 0 40px rgba(127, 0, 255, 0.5); /* Sombra púrpura */
-}
-
-.card img {
-    border-radius: 12px;
+    border-radius: 10px;
 }
 
 .card-title {
     font-size: 1.75rem;
-    color: #39FF14; /* Verde lima */
+    color: #2C3E50; /* Títulos de las tarjetas */
     margin-bottom: 15px;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil */
 }
 
 .card-subtitle {
     font-size: 1.25rem;
-    color: #A3A3A3; /* Gris suave */
+    color: #7F8C8D; /* Gris suave */
     margin-bottom: 15px;
 }
 
 .card-body ul {
     padding-left: 0;
     list-style-type: none;
-    color: #e6e6e6; /* Texto gris claro */
 }
 
 .card-body li {
     font-size: 1rem;
+    color: #7F8C8D; /* Gris para la lista */
     margin-bottom: 10px;
 }
 
 .education, .experience, .about {
-    background-color: #121212;
+    background-color: #FFFFFF; /* Fondo blanco */
     padding: 60px 0;
-    border-top: 1px solid #7F00FF; /* Línea púrpura */
+    border-top: 1px solid #BDC3C7; /* Línea gris suave */
 }
 
 .about img {
-    border: 3px solid #39FF14; /* Borde verde lima */
+    border: 3px solid #34495E; /* Borde azul oscuro */
     border-radius: 12px;
-    box-shadow: 0 0 20px rgba(57, 255, 20, 0.4);
+    box-shadow: 0 0 20px rgba(52, 152, 219, 0.4);
 }
 
 .skill-bar {
@@ -127,53 +128,51 @@ h2 {
 
 .skill-bar .skill-title {
     font-size: 1.25rem;
-    color: #39FF14; /* Verde lima */
+    color: #2C3E50; /* Un color más oscuro para las barras */
     margin-bottom: 10px;
-    text-shadow: 0 0 10px #39FF14;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Sombra ligera */
 }
 
 .skill-bar .progress {
-    background-color: #1c1c1c;
+    background-color: #ECF0F1; /* Gris claro */
     border-radius: 12px;
-    box-shadow: 0 0 15px rgba(57, 255, 20, 0.2);
+    box-shadow: 0 0 15px rgba(52, 152, 219, 0.2);
 }
 
 .skill-bar .progress-bar {
-    background-color: #39FF14; /* Verde lima */
-    box-shadow: 0 0 10px #39FF14;
+    background-color: #34495E; /* Azul oscuro */
+    box-shadow: 0 0 10px rgba(52, 152, 219, 0.5);
     font-size: 1rem;
 }
 
 footer {
-    background-color: #1c1c1c;
-    color: #e6e6e6; /* Blanco */
+    background-color: #2C3E50; /* Fondo azul oscuro */
+    color: #FFFFFF; /* Blanco */
     text-align: center;
     padding: 20px 0;
-    box-shadow: 0 -5px 20px rgba(127, 0, 255, 0.2);
+    box-shadow: 0 -5px 20px rgba(52, 152, 219, 0.2);
 }
 
 footer a {
-    color: #39FF14; /* Verde lima */
+    color: #BDC3C7; /* Gris claro */
     transition: color 0.3s, text-shadow 0.3s;
 }
 
 footer a:hover {
-    color: #4C0082; /* Púrpura más oscuro */
-    text-shadow: 0 0 10px #7F00FF;
+    color: #FFFFFF; /* Blanco */
+    text-shadow: 0 0 10px rgba(52, 152, 219, 0.8); /* Azul claro en hover */
 }
 
 .navbar {
-    background-color: #1c1c1c;
-    box-shadow: 0 0 20px rgba(127, 0, 255, 0.3);
+    background-color: #34495E; /* Azul oscuro */
+    box-shadow: 0 0 20px rgba(52, 152, 219, 0.3);
 }
 
 .navbar-brand, .nav-link {
-    color: #e6e6e6 !important; /* Blanco */
-    text-shadow: 0 0 10px #e6e6e6;
+    color: #FFFFFF !important; /* Blanco */
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 
 .nav-link:hover {
-    
-    text-shadow: 0 0 20px #7F00FF;
+    text-shadow: 0 0 20px rgba(52, 152, 219, 0.8); /* Sombra azul en hover */
 }
-
