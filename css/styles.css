@@ -44,6 +44,7 @@ body {
     line-height: 1.5; /* Espacio entre las líneas */
     text-align: center; /* Centrado del texto */
 }
+
 .hero h1 {
     font-size: 4rem;
     margin: 0;
@@ -95,14 +96,15 @@ h2 {
     border: 2px solid #34495E; /* Borde azul oscuro */
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(52, 152, 219, 0.1); /* Sombra sutil */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Asegúrate de que la transición esté aquí */
     color: #2C3E50; /* Texto oscuro */
     margin-bottom: 40px;
 }
 
 .projects .card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 0 40px rgba(52, 152, 219, 0.3); /* Sombra sutil */
+    transform: translateY(-10px); /* Se eleva ligeramente */
+    box-shadow: 0 0 40px rgba(52, 152, 219, 0.3); /* Sombra más intensa */
+    cursor: pointer; /* Cambia el cursor para indicar que es interactivo */
 }
 
 .projects .card img {
@@ -136,6 +138,7 @@ h2 {
     margin-bottom: 10px;
 }
 
+/* Secciones de educación, experiencia y sobre mí */
 .education, .experience, .about {
     background-color: #FFFFFF; /* Fondo blanco */
     padding: 60px 0;
